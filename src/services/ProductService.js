@@ -7,10 +7,8 @@ export default class ProductService {
         console.log(response); 
         return response;
       })
-      .catch((error) => {
-        console.error("Error fetching products:", error);
-        throw error;
-      });
+    
+    
   }
   getProductById(id) {
     return axios.get(`https://dummyjson.com/products/${id}`)
@@ -18,10 +16,7 @@ export default class ProductService {
         console.log(response); 
         return response;
       })
-      .catch((error) => {
-        console.error("Error fetching products:", error);
-        throw error;
-      });
+     
   }
 }
 
@@ -38,9 +33,6 @@ export default class ProductService {
             console.log(response); 
             return response;
           })
-          .catch((error) => {
-            console.error("Error fetching products:", error);
-            throw error;
-          });
-      }
+      
+      
 }*/

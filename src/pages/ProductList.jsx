@@ -28,7 +28,7 @@ export default function ProductList() {
 
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
-    toast.success(`${product.title} sepete eklendi!`)
+    toast.success(`${product.title} sepete eklendi`)
   };
 
   return (
@@ -57,7 +57,6 @@ export default function ProductList() {
                 <Table.Cell>{product.description}</Table.Cell>
                 <Table.Cell>{product.category}</Table.Cell>
                 <Table.Cell> 
-                {/* onlickte funct direkt çalıştırma, o functı ata */}
                   <Button onClick={() => handleAddToCart(product)}>Sepete ekle</Button>
                 </Table.Cell>
               </Table.Row>

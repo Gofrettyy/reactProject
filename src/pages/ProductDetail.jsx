@@ -13,7 +13,7 @@ export default function ProductDetail() {
         let productService = new ProductService();
         const response = await productService.getProductById(id);
         setProduct(response.data);
-        console.log(response.data)
+        
       } catch (error) {
         console.error("Error fetching products:", error);
       }

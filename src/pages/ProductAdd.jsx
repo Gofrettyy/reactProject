@@ -7,8 +7,8 @@ import KodlamaIoTextInput from "../utilities/customFormControls/KodlamaIoTextInp
 export default function ProductAdd() {
     const initialValues = { title: "", price: "" };
     const schema = Yup.object({
-        title: Yup.string().required("Ürün adı zorunlu"),
-        price: Yup.number().required("Ürün fiyatı zorunlu")
+        title: Yup.string().required("Ürün adı zorunludur"),
+        price: Yup.number().required("Ürün fiyatı zorunludur")
     });
     return (
         <>
